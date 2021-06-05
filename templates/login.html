@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="return__block">
+	<a href="/" class="return__link">Вернуться на главную страницу</a>
+</div>
+
+<form method="POST">
+	<div class="login-box">
+  		<h1>Login</h1>
+		<div class="textbox">
+			<i class="fab fa-servicestack"></i>
+			<input type="text" name="username" placeholder="Username">
+		</div>
+
+		<div class="textbox">
+			<i class="fas fa-lock"></i>
+			<input type="password" name="password" placeholder="Password">
+		</div>
+
+		<input type="submit" class="btn" value="Sign In">
+		<p><a href="/register" style="text-transform: unset;">You haven't account? Click to register</a></p>
+	</div>
+</form>
+{% endblock %}

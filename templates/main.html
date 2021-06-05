@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto:wght@300;400;700&family=Sulphur+Point&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="search__form">
+				<a href="#">BLACKOUT</a>
+				<form action="" method="get">
+	  				<input type="search" placeholder="Найти что-нибудь..">
+	  				<button type="submit">Поиск</button>
+				</form>
+			</div>
+
+			<nav class="one">
+				<ul class="topmenu">
+					<li>
+					    <div class="topmenu_div">
+						    <img src="{{ url_for('static', filename='images/home-page.svg')}}" width="25" height="25">
+						    <a href="#">Home</a>
+					    </div>
+					</li>
+					<li>
+						<div class="topmenu_div">
+					    	<img src="{{ url_for('static', filename='images/criminal-hand-print-silhouette.svg')}}" width="25" height="25">
+					    	<a href="#">Work</a>
+							<ul class="submenu">
+								<li><a href="#">Эксплойты</a></li>
+								<li><a href="#">Скрипты</a></li>
+								<li><a href="#">Хакинг</a></li>
+								<li><a href="#">Боты</a></li>
+							</ul>
+					    </div>
+					</li>
+					<li>
+					    <div class="topmenu_div">
+						    <img src="{{ url_for('static', filename='images/gear.svg')}}" width="25" height="25">
+						    <a href="#">DevOPS</a>
+						      	<ul class="submenu">
+						        	<li><a href="#">Проекты</a></li>
+						       	    <li><a href="#">Контакты</a></li>
+									<li><a href="#">Лицензия</a></li>
+						      	</ul>
+						</div>
+					</li>
+					<li>
+						<div class="topmenu_div">
+							<img src="{{ url_for('static', filename='images/criminal-hand-print-silhouette.svg')}}" width="25" height="25">
+						    <a href="/blogs">Blogs</a>
+						</div>
+					</li>
+					<li>
+						<div class="topmenu_div">
+							<img src="{{ url_for('static', filename='images/terrorist.svg')}}" width="25" height="25">
+						    <a href="/logout">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url(../images/MAIN-REG.png) no-repeat;
+  background-size: cover;
+}
+
+/* Working on TOPMENU and SUBMENU */
+
+header {
+  background: #4caf50;
+}
+
+.search__form {
+  display: flex;
+
+}
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  transition: 0.3s;
+
+  
+}
+
+form input{
+  border: 2px solid #a4a7eb;
+  border-radius: 5px;
+  background: #fff;
+  padding: 3px;
+}
+
+form input[type="search"] {
+  padding-left: 10px;
+}
+
+form button[type="submit"] {
+  padding: 3px 0px;
+  margin-left: 10px;
+  border: 2px solid #a4a7eb;
+  border-radius: 5px;
+  width: 60px;
+}
+
+
+
+.search__form a {
+  font-weight: 700;
+}
+
+.one ul a {
+  color: #fff;
+}
+
+.one .submenu {
+  display: none;
+
+
+}
+
+.one ul li:hover .submenu {
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: #7bbd8d;
+  box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+  -webkit-box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+}
+
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+
+a {
+  display: block;
+  padding: 5px 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.submenu li a {
+  padding: 15px 0px;
+  transition: 0.3s;
+}
+
+
+li > img {
+  padding-left: 20px;
+}
+
+.topmenu_div {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.topmenu_div:hover {
+  background-color: #7bbd8d;
+  box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+  -webkit-box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+
+}
+
+
+.header__inner {
+  position: absolute;
+  width: 100%;
+}
+
+.header__inner:hover {
+  background: #3b5944;
+  box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+  -webkit-box-shadow:0px 0px 50px rgba(0, 154, 0, 1);
+}
+

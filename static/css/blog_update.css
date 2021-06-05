@@ -1,0 +1,42 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+* {
+
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url(../images/blog-img.png);
+	color: #fff;
+
+}
+
+ol, ul {
+	list-style: none;
+}
+
+h1 {
+	color: #7db088;
+	margin-bottom: 10px;
+}
+
+h2 {
+	padding-bottom: 20px;
+	color: #a9c2ae;
+}
+
+p {
+	padding-bottom: 20px;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.header_info {
+	height: 30px;
+	width: 300px;
+	font-size: 15px;
+}

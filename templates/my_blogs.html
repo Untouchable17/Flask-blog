@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_blogs.css')}}">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+{% block content %}
+<!-- block content -->
+<header class="header">
+	<div class="wrapper">
+		<h1>{{ blog.title }}</h1>
+
+		<p>{{ blog.body | safe }}</p>
+		<p><b>Дата {{ blog.date.date() }}</b></p>
+		<a class="delete" href="/blogs/{{ blog.id }}/delete">Удалить</a>
+		<a class="update" href="/posts/{{ blog.id }}/update">Редактировать</a>
+		<a class="return" href="/blogs">Отмена</a>
+	</div>
+</header>
+
+<!-- block content -->
+{% endblock %}

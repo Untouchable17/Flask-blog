@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Write Blog Page</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/write-blog.css')}}">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto:wght@300;400;700&family=Sulphur+Point&display=swap" rel="stylesheet">
+{% endblock%}
+
+{% block content %}
+<header>
+	<div class="wrapper">
+		<h1>Добавление блога</h1>
+		<form method="POST">
+		    <p><input type="text" name="title" placeholder="Название блога (не более 50 символов)" maxlength="50"></p>
+		    <p><textarea name="body" class="ckeditor" placeholder="Расскажите о своих мыслях" cols="100" rows="10"></textarea></p>
+		    <button type="submit">Добавить</button>
+		    <a href="/blogs">Отмена</a>
+		</form>	
+	</div>
+</header>
+{% endblock %}

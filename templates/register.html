@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Register Page</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css')}}">
+{% endblock%}
+
+{% block content %}
+
+<div class="return__block">
+    <a href="/" class="return__link">Вернуться на главную страницу</a>
+</div>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+<form method="POST">
+    <div class="login-box">
+        <h1>Register</h1>
+    <div class="textbox">
+        <i class="fas fa-passport"></i>
+        <input type="text" name="first_name" placeholder="First name">
+    </div>
+
+    <div class="textbox">
+        <i class="fas fa-passport"></i>
+        <input type="text" name="last_name" placeholder="Last name">
+    </div>
+    <div class="textbox">
+        <i class="fab fa-servicestack"></i>
+        <input type="text" name="username" placeholder="Username">
+    </div>
+    <div class="textbox">
+        <i class="fas fa-at"></i>
+        <input type="email" name="email" placeholder="Your email">
+    </div>
+    <div class="textbox">
+        <i class="fas fa-lock-open"></i>
+        <input type="password" name="password" placeholder="Password">
+    </div>
+    <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password2" placeholder="Repeat password">
+    </div>
+
+    <input type="submit" class="btn" value="Sign Up">
+    <a href="/login" style="text-transform: unset;">Have account? Log In</a>
+    </div>
+    </form>
+{% endblock %}
