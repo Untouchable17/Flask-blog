@@ -1,4 +1,3 @@
-# utf-8 coding style /usr/bin
 import os
 from flask import Flask, url_for
 from datetime import datetime
